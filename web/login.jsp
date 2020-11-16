@@ -11,6 +11,7 @@
     <title>玩家注册页面</title>
 </head>
 <body>
-
+欢迎来到德莱联盟
+全军出击!
 </body>
 </html>
