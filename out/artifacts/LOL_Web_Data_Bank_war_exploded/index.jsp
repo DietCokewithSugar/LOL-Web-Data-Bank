@@ -11,8 +11,6 @@
     <title>欢迎来到英雄联盟</title>
   </head>
   <body>
-  777
-  4396 443
-
+  $END$
   </body>
 </html>
