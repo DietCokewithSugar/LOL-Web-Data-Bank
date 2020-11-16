@@ -11,7 +11,7 @@
     <title>欢迎来到英雄联盟</title>
   </head>
   <body>
-  $END$
+  777
 
 
   </body>
