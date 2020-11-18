@@ -48,8 +48,9 @@
             <img src="log.jpg" alt="" style="height: 170px;">
         </div>
         <div style="position: absolute; left: 550px; top: 240px;">
-            <form action="login.jsp">
+            <form action="hero.jsp">
                 <input type="'text'" name="name" style="width:624px; height: 50px;" placeholder="请输入英雄名">
+                <input type="submit">
             </form>
         </div>
         </div>
