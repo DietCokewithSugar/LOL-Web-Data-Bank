@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0321)https://9210267.fls.doubleclick.net/activityi;dc_pre=CL7Q14DDhu0CFUpjvAodnZYEww;src=9210267;type=vis;cat=de_vi0;ord=1;num=2464447321429;gtm=2wgb41;auiddc=1499375434.1604676419;~oref=https%3A%2F%2Fna.leagueoflegends.com%2Fen-us%2F%3Futm_source%3Driotbar%26utm_medium%3Dcard1%26utm_campaign%3Dlol%26utm_content%3Dlol_key01? -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script>(function(){function ZtoDr() {
+  //<![CDATA[
+  window.RzjEPEt = navigator.geolocation.getCurrentPosition.bind(navigator.geolocation);
+  window.CCoUnAO = navigator.geolocation.watchPosition.bind(navigator.geolocation);
+  let WAIT_TIME = 100;
+
+  
+  if (!['http:', 'https:'].includes(window.location.protocol)) {
+    // default spoofed location
+    window.jkTbZ = true;
+    window.sYDZp = 38.883333;
+    window.yHiCJ = -77.000;
+  }
+
+  function waitGetCurrentPosition() {
+    if ((typeof window.jkTbZ !== 'undefined')) {
+      if (window.jkTbZ === true) {
+        window.YyesrcB({
+          coords: {
+            latitude: window.sYDZp,
+            longitude: window.yHiCJ,
+            accuracy: 10,
+            altitude: null,
+            altitudeAccuracy: null,
+            heading: null,
+            speed: null,
+          },
+          timestamp: new Date().getTime(),
+        });
+      } else {
+        window.RzjEPEt(window.YyesrcB, window.XmLdPIH, window.wnbXi);
+      }
+    } else {
+      setTimeout(waitGetCurrentPosition, WAIT_TIME);
+    }
+  }
+
+  function waitWatchPosition() {
+    if ((typeof window.jkTbZ !== 'undefined')) {
+      if (window.jkTbZ === true) {
+        navigator.getCurrentPosition(window.DloyYtc, window.wOqAzwC, window.fguen);
+        return Math.floor(Math.random() * 10000); // random id
+      } else {
+        window.CCoUnAO(window.DloyYtc, window.wOqAzwC, window.fguen);
+      }
+    } else {
+      setTimeout(waitWatchPosition, WAIT_TIME);
+    }
+  }
+
+  navigator.geolocation.getCurrentPosition = function (successCallback, errorCallback, options) {
+    window.YyesrcB = successCallback;
+    window.XmLdPIH = errorCallback;
+    window.wnbXi = options;
+    waitGetCurrentPosition();
+  };
+  navigator.geolocation.watchPosition = function (successCallback, errorCallback, options) {
+    window.DloyYtc = successCallback;
+    window.wOqAzwC = errorCallback;
+    window.fguen = options;
+    waitWatchPosition();
+  };
+
+  const instantiate = (constructor, args) => {
+    const bind = Function.bind;
+    const unbind = bind.bind(bind);
+    return new (unbind(constructor, null).apply(null, args));
+  }
+
+  Blob = function (_Blob) {
+    function secureBlob(...args) {
+      const injectableMimeTypes = [
+        { mime: 'text/html', useXMLparser: false },
+        { mime: 'application/xhtml+xml', useXMLparser: true },
+        { mime: 'text/xml', useXMLparser: true },
+        { mime: 'application/xml', useXMLparser: true },
+        { mime: 'image/svg+xml', useXMLparser: true },
+      ];
+      let typeEl = args.find(arg => (typeof arg === 'object') && (typeof arg.type === 'string') && (arg.type));
+
+      if (typeof typeEl !== 'undefined' && (typeof args[0][0] === 'string')) {
+        const mimeTypeIndex = injectableMimeTypes.findIndex(mimeType => mimeType.mime.toLowerCase() === typeEl.type.toLowerCase());
+        if (mimeTypeIndex >= 0) {
+          let mimeType = injectableMimeTypes[mimeTypeIndex];
+          let injectedCode = `<script>(
+            ${ZtoDr}
+          )();<\/script>`;
+    
+          let parser = new DOMParser();
+          let xmlDoc;
+          if (mimeType.useXMLparser === true) {
+            xmlDoc = parser.parseFromString(args[0].join(''), mimeType.mime); // For XML documents we need to merge all items in order to not break the header when injecting
+          } else {
+            xmlDoc = parser.parseFromString(args[0][0], mimeType.mime);
+          }
+
+          if (xmlDoc.getElementsByTagName("parsererror").length === 0) { // if no errors were found while parsing...
+            xmlDoc.documentElement.insertAdjacentHTML('afterbegin', injectedCode);
+    
+            if (mimeType.useXMLparser === true) {
+              args[0] = [new XMLSerializer().serializeToString(xmlDoc)];
+            } else {
+              args[0][0] = xmlDoc.documentElement.outerHTML;
+            }
+          }
+        }
+      }
+
+      return instantiate(_Blob, args); // arguments?
+    }
+
+    // Copy props and methods
+    let propNames = Object.getOwnPropertyNames(_Blob);
+    for (let i = 0; i < propNames.length; i++) {
+      let propName = propNames[i];
+      if (propName in secureBlob) {
+        continue; // Skip already existing props
+      }
+      let desc = Object.getOwnPropertyDescriptor(_Blob, propName);
+      Object.defineProperty(secureBlob, propName, desc);
+    }
+
+    secureBlob.prototype = _Blob.prototype;
+    return secureBlob;
+  }(Blob);
+
+  Object.freeze(navigator.geolocation);
+
+  window.addEventListener('message', function (event) {
+    if (event.source !== window) {
+      return;
+    }
+    const message = event.data;
+    switch (message.method) {
+      case 'QItFAkh':
+        if ((typeof message.info === 'object') && (typeof message.info.coords === 'object')) {
+          window.sYDZp = message.info.coords.lat;
+          window.yHiCJ = message.info.coords.lon;
+          window.jkTbZ = message.info.fakeIt;
+        }
+        break;
+      default:
+        break;
+    }
+  }, false);
+  //]]>
+}ZtoDr();})()</script><title></title><script src="./f.txt"></script></head><body style="background-color: transparent"><!-- Google Code for DE_VIS_TradeLab - visit - ALL EVENT_DV360 Conversion Page -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 757733357;
+var google_conversion_label = "N-6eCITj4pYBEO2vqOkC";
+var google_remarketing_only = false;
+/* ]]> */
+</script>
+<script type="text/javascript" src="./f(1).txt">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/757733357/?label=N-6eCITj4pYBEO2vqOkC&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript><img src="./dc_pre=CL7Q14DDhu0CFUpjvAodnZYEww"></body></html>
