@@ -1,4 +1,5 @@
-<%--
+<%@ page import="web.Dao" %>
+<%@ page import="web.hero" %><%--
   Created by IntelliJ IDEA.
   User: 12554
   Date: 2020/11/16
@@ -22,7 +23,18 @@
         }
     </style>
 </head>
-<body>
+<body >
+<embed  src="faded.mp3" width="0px" height="0px" autostart=true></embed>
+<%--<%--%>
+<%--    Dao dao=new Dao();--%>
+<%--    String name=request.getParameter("name");--%>
+<%--    hero hero=dao.select(name);--%>
+<%--        %>名称：<%=hero.getName1()%> <br>--%>
+<%--        小名：<%=hero.getName2()%><br>--%>
+<%--        背景故事：<%=hero.getBack_stories()%> <br>--%>
+<%--        <br><%--%>
+<%--        %>--%>
+<%--%>--%>
 <div id="background" style="background-color:#5383e8; width:100%;height:100%;">
     <div class="index-log" style="height: 300px; position: relative;">
         <div class="l-menu" style="height: 48px;">
@@ -36,8 +48,8 @@
             <img src="log.jpg" alt="" style="height: 170px;">
         </div>
         <div style="position: absolute; left: 550px; top: 240px;">
-            <form action="">
-                <input type="'text'" name="search" style="width:624px; height: 50px;" placeholder="请输入英雄名">
+            <form action="login.jsp">
+                <input type="'text'" name="name" style="width:624px; height: 50px;" placeholder="请输入英雄名">
             </form>
         </div>
         </div>
