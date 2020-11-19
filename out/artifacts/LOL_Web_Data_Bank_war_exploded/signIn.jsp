@@ -160,10 +160,10 @@
                                         </div>
                                         <div class="grid grid-justify-space-between grid-direction__row grid-fill signin-social-buttons grid-button-group-compact">
                                             <button type="button" class="login-button login-button__facebook"
-                                                    data-testid="login-button-facebook" title="facebook">facebook
+                                                    data-testid="login-button-facebook" title="facebook" onclick="window.open('http://www.facebook.com')">facebook
                                             </button>
                                             <button type="button" class="login-button login-button__google"
-                                                    data-testid="login-button-google" title="google">google
+                                                    data-testid="login-button-google" title="google" onclick="window.open('http://www.google.com')">google
                                             </button>
                                             <button type="button" class="login-button login-button__apple"
                                                     data-testid="login-button-apple" title="apple" onclick="window.open('http://www.apple.com')">apple

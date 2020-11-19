@@ -71,7 +71,7 @@
                         <div class="inline-image inline-image--full inline-image--center inline-image--free"><img
                                 alt="Legal Jibber Jabber" width="1120" loading="lazy"
                                 src="./Sign%20In_files/lol-logos.png"
-                                sizes="(min-width: 1120px) 1120px,(min-width: 550px) calc(100vw - 80px),calc(100vw - 40px)"
+                                sizes="(min-width: 1120px) 1120px,(min-width: 550px) calc(100vw - 80px),calc(100vw - 40px)">
                         </div>
                     </div>
                 </div>
