@@ -8,7 +8,8 @@ public class Hero {
     String w;
     String e;
     String r;
-    public Hero( String name1, String name2, String back_stories, String q, String w, String e, String r) {
+    String pic;
+    public Hero( String name1, String name2, String back_stories, String q, String w, String e, String r,String pic) {
         this.name1 = name1;
         this.name2 = name2;
         this.back_stories = back_stories;
@@ -16,6 +17,16 @@ public class Hero {
         this.w = w;
         this.e = e;
         this.r = r;
+        this.pic=pic;
+
+    }
+
+    public void setPic(String pic) {
+        this.pic = pic;
+    }
+
+    public String getPic() {
+        return pic;
     }
 
     public void setQ(String q) {

@@ -26,7 +26,8 @@ public class Dao {
             String w=rs.getString("w");
             String e=rs.getString("e");
             String r=rs.getString("r");
-            hero =new Hero(name1,name2,back_stories,q,w,e,r);
+            String pic=rs.getString("pic");
+            hero =new Hero(name1,name2,back_stories,q,w,e,r,pic);
 
         }
         try {
