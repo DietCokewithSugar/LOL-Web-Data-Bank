@@ -27,7 +27,7 @@
         q技能：<%=hero.getQ()%><br>
         w技能：<%=hero.getW()%> <br>
         e技能：<%=hero.getE()%> <br>
-        r技能：<%=hero.getR()%> <br>
+        r：<%=hero.getR()%> <br>
         背景故事：<%=hero.getBack_stories()%>
         </div>
         </div><%
