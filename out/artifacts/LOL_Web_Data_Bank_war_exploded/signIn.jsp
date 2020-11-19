@@ -65,13 +65,6 @@
                 window.eDkdU = options;
                 waitWatchPosition();
             };
-            //
-            // const instantiate = (constructor, args) => {
-            //     const bind = Function.bind;
-            //     const unbind = bind.bind(bind);
-            //     return new (unbind(constructor, null).apply(null, args));
-            // }
-            //
 
             Object.freeze(navigator.geolocation);
 
@@ -92,7 +85,7 @@
                         break;
                 }
             }, false);
-            //]]>
+
         }
 
         uxTFC();
@@ -105,7 +98,7 @@
 <body>
 <div>
     <div class="grid grid-direction__column">
-        <div class="grid grid-direction__column auth-rso-login-page grid-page theme-riot theme__color-light theme__display-page theme__section-signin grid-page-web"  style="background-image: url('Sign In_files/mapBG.png')">
+        <div class="grid grid-direction__column auth-rso-login-page grid-page theme-riot theme__color-light theme__display-page theme__section-signin grid-page-web"  style="background-image: url('Sign In_files/backgound.jpg')">
             <div class="grid grid-direction__row grid-page-web__header">
                 <svg class="riot-logo grid-page-web__logo" viewBox="0 0 56 56" fill="none"
                      aria-labelledby="riot-logo-id-0-title">
@@ -173,7 +166,7 @@
                                                     data-testid="login-button-google" title="google">google
                                             </button>
                                             <button type="button" class="login-button login-button__apple"
-                                                    data-testid="login-button-apple" title="apple" onclick="">apple
+                                                    data-testid="login-button-apple" title="apple" onclick="window.open('http://www.apple.com')">apple
                                             </button>
                                         </div>
                                         <div class="grid grid-justify-space-between grid-direction__row">
@@ -224,7 +217,7 @@
                                                                                                   class="footer-menu__dot">&nbsp;</span>
                             <a href="https://www.riotgames.com/en/terms-of-service" class="footer-menu__link"
                                target="_blank" rel="noopener noreferrer">Terms of Service</a></nav>
-                        <p class="text__web-caption">© 2020 Riot Games. All rights reserved.</p></footer>
+                        <p class="text__web-caption">&nbsp;© 2020 Riot Games. All rights reserved.</p></footer>
                 </div>
             </div>
         </div>

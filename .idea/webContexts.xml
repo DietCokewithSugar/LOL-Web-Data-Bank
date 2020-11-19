@@ -5,6 +5,7 @@
       <map>
         <entry key="file://$PROJECT_DIR$/web/mainPage.jsp" value="file://$PROJECT_DIR$/web" />
         <entry key="file://$PROJECT_DIR$/web/signIn.jsp" value="file://$PROJECT_DIR$/web" />
+        <entry key="file://$PROJECT_DIR$/web/subPage.jsp" value="file://$PROJECT_DIR$/web" />
       </map>
     </option>
   </component>
