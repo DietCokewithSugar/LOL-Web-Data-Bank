@@ -30,6 +30,7 @@
         r技能：<%=hero.getR()%> <br>
         背景故事：<%=hero.getBack_stories()%>
         </div>
+
         </div><%
         %>
 </body>
