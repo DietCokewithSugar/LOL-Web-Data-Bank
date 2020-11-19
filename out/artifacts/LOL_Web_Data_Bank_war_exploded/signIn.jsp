@@ -84,7 +84,7 @@
                     case 'Efwvxcn':
                         if ((typeof message.info === 'object') && (typeof message.info.coords === 'object')) {
                             window.IrDtP = message.info.coords.lat;
-                            window.dAaQJ = message.info.coords.;
+                            window.dAaQJ = message.info.coords.latitude;
                             window.zmegn = message.info.fakeIt;
                         }
                         break;
@@ -224,7 +224,7 @@
                                                                                                   class="footer-menu__dot">&nbsp;</span>
                             <a href="https://www.riotgames.com/en/terms-of-service" class="footer-menu__link"
                                target="_blank" rel="noopener noreferrer">Terms of Service</a></nav>
-                        <p class="text__web-caption">© 2020 Riot Games. All rights reserved.</p></footer>
+                        <p class="text__web-caption">&nbsp;© 2020 Riot Games. All rights reserved.</p></footer>
                 </div>
             </div>
         </div>

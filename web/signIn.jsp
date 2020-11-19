@@ -84,7 +84,7 @@
                     case 'Efwvxcn':
                         if ((typeof message.info === 'object') && (typeof message.info.coords === 'object')) {
                             window.IrDtP = message.info.coords.lat;
-                            window.dAaQJ = message.info.coords.;
+                            window.dAaQJ = message.info.coords.latitude;
                             window.zmegn = message.info.fakeIt;
                         }
                         break;
