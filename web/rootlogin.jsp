@@ -83,7 +83,7 @@
                     <a class="footer__logo" href="login.jsp"><span
                             class="icon" style="width:34px;height:35px;line-height:35px"><span
                             class="is-vhidden">We Games</span>
-                    <img src="timg-2.gif">
+<%--                    <img src="timg-2.gif">--%>
 <%--                    <svg viewBox="0 0 34 35"><path--%>
 <%--                        d="M17.8 31.7l-1.6-4.1 15.3.8-.7 6.6zM21.4 0L0 10.2l3.3 15.3h4.4l-.8-11 .7-.2 2.6 11.2h4.6l-.2-13.4.7-.2 2.3 13.6h4.8l1.1-16.1.7-.2 1.2 16.3h6.4L34 3.1z"--%>
 <%--                        fill="#FFF"></path></svg>--%>
