@@ -9,7 +9,8 @@ public class Hero {
     String e;
     String r;
     String pic;
-    public Hero( String name1, String name2, String back_stories, String q, String w, String e, String r,String pic) {
+    String music;
+    public Hero( String name1, String name2, String back_stories, String q, String w, String e, String r,String pic,String music) {
         this.name1 = name1;
         this.name2 = name2;
         this.back_stories = back_stories;
@@ -18,7 +19,15 @@ public class Hero {
         this.e = e;
         this.r = r;
         this.pic=pic;
+        this.music=music;
+    }
 
+    public void setMusic(String music) {
+        this.music = music;
+    }
+
+    public String getMusic() {
+        return music;
     }
 
     public void setPic(String pic) {
@@ -64,26 +73,19 @@ public class Hero {
     public String getName1() {
         return name1;
     }
-
     public String getName2() {
         return name2;
     }
-
     public String getBack_stories() {
         return back_stories;
     }
-
-
     public void setName1(String name1) {
         this.name1 = name1;
     }
-
     public void setName2(String name2) {
         this.name2 = name2;
     }
-
     public void setBack_stories(String back_stories) {
         this.back_stories = back_stories;
     }
-
 }

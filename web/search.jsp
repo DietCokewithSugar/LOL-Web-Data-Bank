@@ -46,7 +46,7 @@
             </ul>
         </div>
         <div class="log" style="height: 200px;position: absolute; left:50%; top: 50%; margin-top: -100px;margin-left: -100px;">
-            < img src="log.jpg" alt="" style="height: 170px;">
+            <img src="log.jpg" alt="" style="height: 170px;">
         </div>
         <audio autoplay="autoplay", loop="loop" controls="controls"
                style=" position: absolute ;width: 40px; height: 10px;
