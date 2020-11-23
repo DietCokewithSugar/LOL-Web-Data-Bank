@@ -9,32 +9,32 @@
 <html>
 <head>
     <title>欢迎来到英雄联盟 </title>
+    <style type="text/css">
+        *{
+            margin: 0px;
+            border: 0px;
+            padding: 0px;
+        }
+        ul{
+            list-style-type: none;
+        }
+        ul li{
+            float:left;
+            margin-top: 35px;
+            margin-left: 30px;
+            margin-right: 15px;
+        }
+        ul li a{
+            color: white;
+        }
+        a{
+            text-decoration: none;
+        }
+    </style>
 </head>
-<style type="text/css">
-    *{
-        margin: 0px;
-        border: 0px;
-        padding: 0px;
-    }
-    ul{
-        list-style-type: none;
-    }
-    ul li{
-        float:left;
-        margin-top: 35px;
-        margin-left: 30px;
-        margin-right: 15px;
-    }
-    ul li a{
-        color: white;
-    }
-    a{
-        text-decoration: none;
-    }
-</style>
 <body >
 <img src="MainBackground.jpg" style="height:100%; width: 100%; position:absolute">
-<div style="background-color:black; width: 1650px;height: 80px; position: relative">
+<div style="background-color:black; width: 1650px;height: 80px;position: relative">
     <ul>
         <img src="logo.png" alt="" style="width: 80px; height: 80px; float: left;margin-left:0px;">
         <li>
