@@ -74,7 +74,6 @@
 
 
 
-1
 <footer role="contentinfo" class="footer">
     <div class="content-center">
         <div class="footer__row">
