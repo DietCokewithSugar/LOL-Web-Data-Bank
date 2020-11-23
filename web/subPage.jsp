@@ -1,7 +1,6 @@
-<!DOCTYPE html >
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!DOCTYPE html>
 <html lang="en"
-      class="js csspointerevents flexbox flexboxlegacy no-flexboxtweener flexwrap csstransitions cssanimations" >
+      class="js csspointerevents flexbox flexboxlegacy no-flexboxtweener flexwrap csstransitions cssanimations">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>JavaWeb | SubPage</title>
@@ -37,7 +36,15 @@
                 "url": 'signIn.jsp',
                 "subMenuItems": [],
                 "target": null
-            }, {"id": "news", "text": "Hero", "url": 'hero.jsp', "subMenuItems": [], "target": null}],
+            }, {"id": "news", "text": "Hero", "url": 'hero.jsp', "subMenuItems": [], "target": null},
+                {
+                    "id": "root",
+                    "text": "ROOT",
+                    "url":'rootlogin.jsp',
+                    "subMenuItems": [],
+                    "target" : null
+
+                }],
             "activeLink": false
         },
         "applicationSwitcher": {"enabled": true},
@@ -59,126 +66,16 @@
                     </div>
                 </div>
             </div>
-
-
-
-
-
-
-
-
-
-            <div >
-                <div class="widget widget--body-component">
-                    <div class="content-gutter content-center content-center--10-12">
-                        <div class="inline-image inline-image--full inline-image--center inline-image--free"><img
-                                alt="Legal Jibber Jabber" width="1120" loading="lazy"
-                                src="./Sign%20In_files/lol-logos.png"
-                                sizes="(min-width: 1120px) 1120px,(min-width: 550px) calc(100vw - 80px),calc(100vw - 40px)">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div class="widget widget--body-component">
-                    <div class="content-gutter content-center content-center--8-12 copy copy--large prose"><h1 dir="ltr"
-                                                                                                               style="text-align: center;">
-                        League of Legends</h1>
-                        <p dir="ltr" style="text-align: center;">Last Updated: August 2018</p>
-                        <p>We love our players and the awesome stuff they create. We support players who use our
-                            intellectual property (“IP”) to create free fan projects for the benefit of the community
-                            (“Projects”). We’re generally on board with Projects that follow the rules outlined below,
-                            but we can still shut down any Project at any time if we decide it misinterprets these rules
-                            or uses our IP inappropriately.</p>
-                        <h3 dir="ltr">1. What can I develop with Riot’s IP?</h3>
-                        <p dir="ltr">TL;DR - Cool free stuff for the community to enjoy, with some exceptions</p>
-                        <p dir="ltr">By formal decree of the Demacian High Court (our legal team): on the condition that
-                            you follow all of the rules described in this policy (the “Rules”) and the <a
-                                    href="https://na.leagueoflegends.com/en/legal/termsofuse">Terms of Use</a>, Riot
-                            Games (“Riot” or “We”) grants you a personal, non-exclusive, non-sublicenseable,
-                            non-transferable, revocable, limited license for you to use, display and create derivative
-                            works based upon Riot’s IP, strictly for noncommercial (except as specifically provided
-                            below) community use. We reserve the right to deny anyone the use of our IP at any time, for
-                            any reason or no reason, including when we decide, in our sole and absolute discretion, that
-                            you are using our IP inappropriately. If we deny you the right to use our IP, you must stop
-                            developing, publishing, or distributing your Project immediately.</p>
-                        <h3 dir="ltr">2. No commercial projects (except…)</h3>
-                        <p dir="ltr">TL;DR - We allow passive ad revenue generation for some content, subscriptions and
-                            donations on streaming channels, and some commercial projects that comply with our API Terms
-                            and Policies and use a valid API key</p>
-                        <p dir="ltr">You may not create commercial Projects, including any Project that crowdsources any
-                            portion of its funding, any Project that involves a business or legal entity, or any Project
-                            where you gate the content with a paywall (e.g., Patreon, YouTube Premium, etc.) without a
-                            written license agreement from us. We have only three exceptions.</p><h4 dir="ltr">The Three
-                            Exceptions</h4><h5 dir="ltr">Exception 1: Ad Revenue</h5>
-                        <p dir="ltr">We permit individual players to promote their Projects on websites, streams, or
-                            videos and passively generate revenue through appropriate advertisements, including pre-roll
-                            ads, ad breaks, and sponsor ad overlays. No inappropriate ads—we alone decide what qualifies
-                            as inappropriate.</p><h5 dir="ltr">Exception 2: Gameplay Streaming</h5>
-                        <p dir="ltr">We permit individual players to solicit personal donations or offer
-                            subscription-based content while live-streaming games, so long as non-subscribers can still
-                            watch the games concurrently.</p><h5 dir="ltr">Exception 3: API Dev Terms and Policies</h5>
-                        <p dir="ltr">We permit commercial Projects that both (1) comply with our <a
-                                href="https://developer.riotgames.com/terms">API Terms</a> and <a
-                                href="https://developer.riotgames.com/policies.html">API Policies</a>; and (2) use a
-                            currently valid Riot API key that we granted to you specifically for your Project. We
-                            reserve the right to distribute and revoke API keys in our sole and absolute discretion. If
-                            we revoke your API key for any reason, you must immediately shut down your Project. &nbsp;
-                        </p>
-                        <h3 dir="ltr">3. No unauthorized games or apps.</h3>
-                        <p dir="ltr">We prohibit the use of our IP in games and apps. Please do not take any part of our
-                            IP (e.g., character appearance, character abilities, maps, icons, items, etc.) and use it in
-                            a game or app. To be super clear: we do not allow any Projects on the Apple Store or Google
-                            Play Store unless they have either a written license agreement from us or a valid Riot API
-                            key and comply with our API Terms and Policies (described above).</p>
-                        <h3 dir="ltr">4. Does my Project have to include original content?</h3>
-                        <p dir="ltr">TL;DR - Yes. Please don’t just rip off existing stuff. Make something new!</p>
-                        <ol>
-                            <li dir="ltr"><p dir="ltr">You may not use a third party’s IP in your Project without their
-                                permission.</p></li>
-                            <li dir="ltr"><p dir="ltr">Don’t steal other people’s Projects; get their permission and
-                                give them credit.</p></li>
-                            <li dir="ltr"><p dir="ltr">Don’t just rip off or add some light commentary to existing
-                                content (e.g., esports matches, other players’ vods). Please make your own, original
-                                contribution to the community. We reserve the right to use services that identify our
-                                content automatically to prevent cannibalization of existing content.</p></li>
-                        </ol>
-                        <h3 dir="ltr">5. Can I use Riot’s logos or trademarks?</h3>
-                        <p dir="ltr">TL;DR - No, we don’t want players to be confused about any possible connection
-                            between Riot and your Project.</p>
-                        <p dir="ltr">Unless you have a written license agreement with us, you may not use any of our
-                            logos or trademarks anywhere in your Project or on any website, advertising material, video,
-                            or other publication. You may not register domain names, social media accounts, or similar
-                            stuff that uses Riot Games or any of our trademarks, trade names, character names, etc. You
-                            may not use our trademarks or names related to our IP as keywords or internet search tags.
-                            &nbsp;</p>
-                        <h3 dir="ltr">6. Can I share my Project with the community?</h3>
-                        <p dir="ltr">TL;DR - Defo. Just let people know it’s a fan Project, not a Riot project.</p>
-                        <p dir="ltr">If you share your Project with others, please conspicuously include the following
-                            notice (e.g., on your Project’s website):</p>
-                        <p dir="ltr">[The title of your Project] was created under Riot Games' "Legal Jibber Jabber"
-                            policy using assets owned by Riot Games. &nbsp;Riot Games does not endorse or sponsor this
-                            project.</p>
-                        <h3 dir="ltr">7. Can Riot use my Project?</h3>
-                        <p dir="ltr">TL;DR - Yes.</p>
-                        <p dir="ltr">We want fans to create and share cool things with each other, and we want to remove
-                            barriers to sharing. If we spotlight a fan Project or make something that resembles what a
-                            fan might have made, we don’t want to be sued, so you give us permission to spotlight or
-                            share your Project with the world. More specifically: you agree that we may use, copy,
-                            modify, distribute, and make derivative works of your Project in any form, on a
-                            royalty-free, non-exclusive, irrevocable, transferable, sub-licensable, worldwide basis, for
-                            any purpose and without having to credit you, pay you anything, or obtain your approval.</p>
-                        <p dir="ltr">*&nbsp;&nbsp; &nbsp;*&nbsp;&nbsp; &nbsp;*</p>
-                        <p dir="ltr">So to wrap this up, here’s the summary: just follow these Rules so you don’t upset
-                            Corporate Mundo, and keep your Project free for the community to enjoy.</p></div>
-                </div>
-            </div>
-
-            <div>你好</div>
-
         </div>
     </div>
 </main>
+
+
+
+
+
+
+
 
 
 
@@ -191,14 +88,14 @@
             <div class="footer__col">
                 <div class="footer__col-inner">
                     <a class="footer__logo" href="login.jsp"><span
-                        class="icon" style="width:34px;height:35px;line-height:35px"><span
-                        class="is-vhidden">We Games</span>
-                    <img src="timg-2.gif">
+                            class="icon" style="width:34px;height:35px;line-height:35px"><span
+                            class="is-vhidden">We Games</span>
+<%--                    <img src="timg-2.gif">--%>
 <%--                    <svg viewBox="0 0 34 35"><path--%>
 <%--                        d="M17.8 31.7l-1.6-4.1 15.3.8-.7 6.6zM21.4 0L0 10.2l3.3 15.3h4.4l-.8-11 .7-.2 2.6 11.2h4.6l-.2-13.4.7-.2 2.3 13.6h4.8l1.1-16.1.7-.2 1.2 16.3h6.4L34 3.1z"--%>
 <%--                        fill="#FFF"></path></svg>--%>
                 </span>
-                </a>
+                    </a>
                     <div class="footer__navigation">
                         <div id="fallback-navigation" class="is-hidden--js">
                             <ul class="list--unstyled list--inline">
@@ -231,11 +128,11 @@
             <div class="footer__col">
                 <div class="footer__social"><a target="_blank" rel="noopener"
                                                href="https://www.baidu.com"><span class="icon"
-                                                                                                style="width:9px;height:16px;line-height:16px"><span
+                                                                                  style="width:9px;height:16px;line-height:16px"><span
                         class="is-vhidden">Follow us on Facebook</span><svg viewBox="0 0 9 16"><path
                         d="M5.7 16V8.7h2.4l.4-2.8H5.7V4c0-.8.2-1.4 1.4-1.4h1.5V.1C8.4.1 7.5 0 6.5 0 4.3 0 2.8 1.3 2.8 3.8v2.1H.3v2.8h2.5V16h2.9z"></path></svg></span></a><a
                         target="_blank" rel="noopener" href="https://www.baidu.com"><span class="icon"
-                                                                                                  style="width:19px;height:14px;line-height:14px"><span
+                                                                                          style="width:19px;height:14px;line-height:14px"><span
                         class="is-vhidden">Follow us on Twitter</span><svg viewBox="0 0 19 14"><path
                         d="M19 1.5c-.7.3-1.5.5-2.3.6.8-.4 1.4-1.1 1.7-2-.8.4-1.6.7-2.5.9-.7-.6-1.7-1-2.8-1-2.2 0-3.9 1.6-3.9 3.6 0 .3 0 .5.1.8C6 4.3 3.1 2.9 1.1.9.8 1.4.6 2 .6 2.6c0 1.2.7 2.3 1.8 2.9-.6 0-1.3-.2-1.8-.4C.6 6.8 2 8.2 3.8 8.5c-.3.1-.7.1-1 .1h-.7c.5 1.4 2 2.4 3.7 2.4-1.3 1-3 1.6-4.9 1.6H0c1.8 1 3.8 1.5 6.1 1.5 7.2-.1 11.1-5.5 11-10.2v-.5c.7-.5 1.4-1.1 1.9-1.9z"></path></svg></span></a><a
                         target="_blank" rel="noopener" href="https://www.baidu.com"><span
@@ -244,7 +141,7 @@
                                                                                          ry="1.9"></ellipse><path
                         d="M16 16h-3.3v-5.2c0-1.2 0-2.8-1.7-2.8s-2 1.4-2 2.7V16H5.7V5.3h3.2v1.5C9.3 5.9 10.4 5 12 5c3.4 0 4 2.2 4 5.1V16z"></path></svg></span></a><a
                         target="_blank" rel="noopener" href="https://www.baidu.com"><span class="icon"
-                                                                                                      style="width:19px;height:13px;line-height:13px"><span
+                                                                                          style="width:19px;height:13px;line-height:13px"><span
                         class="is-vhidden">Watch on YouTube</span><svg viewBox="0 0 19 13"><path
                         d="M18.6 2.8s-.2-1.3-.7-1.8C17.2.3 16.4.3 16 .2 13.4 0 9.5 0 9.5 0S5.6 0 3 .2c-.4 0-1.1 0-1.9.8-.5.5-.7 1.8-.7 1.8s-.2 1.5-.2 3v1.4c0 1.5.2 3 .2 3s.2 1.3.7 1.8c.7.7 1.6.7 2 .8 1.6.2 6.4.2 6.4.2s3.9 0 6.5-.2c.4 0 1.1 0 1.9-.8.6-.6.7-1.8.7-1.8s.2-1.5.2-3V5.8l-.2-3zm-11 6.1V3.7l5 2.6-5 2.6z"></path></svg></span></a>
                 </div>

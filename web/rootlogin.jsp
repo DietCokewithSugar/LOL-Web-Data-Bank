@@ -36,7 +36,15 @@
                 "url": 'signIn.jsp',
                 "subMenuItems": [],
                 "target": null
-            }, {"id": "news", "text": "Hero", "url": 'hero.jsp', "subMenuItems": [], "target": null}],
+            }, {"id": "news", "text": "Hero", "url": 'hero.jsp', "subMenuItems": [], "target": null},
+                {
+                    "id": "root",
+                    "text": "ROOT",
+                    "url":'rootlogin.jsp',
+                    "subMenuItems": [],
+                    "target" : null
+
+                }],
             "activeLink": false
         },
         "applicationSwitcher": {"enabled": true},
@@ -181,10 +189,12 @@
                     <div data-link-id="work-with-us" class="riotbar-navbar-navitem-container   "><a
                             class="riotbar-navbar-link " href="signIn.jsp"
                             data-riotbar-link-id="work-with-us" target="">SignIn</a></div>
-                    <div data-link-id="news" class="riotbar-navbar-navitem-container   "><a class="riotbar-navbar-link "
-                                                                                            href="hero.jsp"
-                                                                                            data-riotbar-link-id="news"
-                                                                                            target="">英雄库</a></div>
+                    <div data-link-id="news" class="riotbar-navbar-navitem-container   ">
+                        <a class="riotbar-navbar-link "
+                           href="hero.jsp"
+                           data-riotbar-link-id="news"
+                           target="">英雄库</a>
+                    </div>
                     <div data-link-id="__moreItems__"
                          class="riotbar-navbar-navitem-container  nav-dropdown-overflow hide" style=""><a
                             class="riotbar-navbar-link " data-riotbar-link-id="__moreItems__" target="">More
