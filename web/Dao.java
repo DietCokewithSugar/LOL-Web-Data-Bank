@@ -6,7 +6,7 @@ public class Dao {
 
     public Hero select(String name) throws SQLException, ClassNotFoundException {
         int i=0;
-        String driverName = "com.mysql.jdbc.Driver";         //驱动程序名
+        String driverName = "com.mysql.jdbc.Driver";         //驱动程 序名
         String userName = "root";                            //数据库用户名
         String userPwd = "12345678";                           //密码
         String dbName = "testdb";                          //数据库名
@@ -27,17 +27,17 @@ public class Dao {
             String e=rs.getString("e");
             String r=rs.getString("r");
             String pic=rs.getString("pic");
-            hero =new Hero(name1,name2,back_stories,q,w,e,r,pic);
-
+            String music=rs.getString("music");
+            hero =new Hero(name1,name2,back_stories,q,w,e,r,pic,music);
         }
         try {
             throw new Exception("未查询到该英雄");
         } catch (Exception e) {
             System.out.println("We got unexpected:" + e.getMessage());
-            System.out.println("We got unexpected:" + e.getLocalizedMessage());
         }
         return hero;
     }
+
 
 
 }

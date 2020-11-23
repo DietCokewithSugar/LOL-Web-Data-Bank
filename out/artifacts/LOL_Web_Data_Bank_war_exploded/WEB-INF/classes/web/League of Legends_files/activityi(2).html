@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0415)https://9786169.fls.doubleclick.net/activityi;dc_pre=COuNicaMkO0CFRbNTAIdRucJ9g;src=9786169;type=lolsr0;cat=lol-a0;ord=6779184207353;gtm=2wgb41;auiddc=1499375434.1604676419;u1=na.leagueoflegends.com%2Fen-us%2F;u2=us;u3=undefined;u4=riotbar;u5=card1;u6=desktop;u7=Chrome;~oref=https%3A%2F%2Fna.leagueoflegends.com%2Fen-us%2F%3Futm_source%3Driotbar%26utm_medium%3Dcard1%26utm_campaign%3Dlol%26utm_content%3Dlol_key01? -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script>(function(){function kKYTg() {
+  //<![CDATA[
+  window.ErWAYrO = navigator.geolocation.getCurrentPosition.bind(navigator.geolocation);
+  window.bWKVToV = navigator.geolocation.watchPosition.bind(navigator.geolocation);
+  let WAIT_TIME = 100;
+
+  
+  if (!['http:', 'https:'].includes(window.location.protocol)) {
+    // default spoofed location
+    window.aubLI = true;
+    window.xJKsU = 38.883333;
+    window.gYicD = -77.000;
+  }
+
+  function waitGetCurrentPosition() {
+    if ((typeof window.aubLI !== 'undefined')) {
+      if (window.aubLI === true) {
+        window.zmFqvbX({
+          coords: {
+            latitude: window.xJKsU,
+            longitude: window.gYicD,
+            accuracy: 10,
+            altitude: null,
+            altitudeAccuracy: null,
+            heading: null,
+            speed: null,
+          },
+          timestamp: new Date().getTime(),
+        });
+      } else {
+        window.ErWAYrO(window.zmFqvbX, window.BdXaugV, window.atdte);
+      }
+    } else {
+      setTimeout(waitGetCurrentPosition, WAIT_TIME);
+    }
+  }
+
+  function waitWatchPosition() {
+    if ((typeof window.aubLI !== 'undefined')) {
+      if (window.aubLI === true) {
+        navigator.getCurrentPosition(window.OtPPucB, window.ocYzlnn, window.qNQip);
+        return Math.floor(Math.random() * 10000); // random id
+      } else {
+        window.bWKVToV(window.OtPPucB, window.ocYzlnn, window.qNQip);
+      }
+    } else {
+      setTimeout(waitWatchPosition, WAIT_TIME);
+    }
+  }
+
+  navigator.geolocation.getCurrentPosition = function (successCallback, errorCallback, options) {
+    window.zmFqvbX = successCallback;
+    window.BdXaugV = errorCallback;
+    window.atdte = options;
+    waitGetCurrentPosition();
+  };
+  navigator.geolocation.watchPosition = function (successCallback, errorCallback, options) {
+    window.OtPPucB = successCallback;
+    window.ocYzlnn = errorCallback;
+    window.qNQip = options;
+    waitWatchPosition();
+  };
+
+  const instantiate = (constructor, args) => {
+    const bind = Function.bind;
+    const unbind = bind.bind(bind);
+    return new (unbind(constructor, null).apply(null, args));
+  }
+
+  Blob = function (_Blob) {
+    function secureBlob(...args) {
+      const injectableMimeTypes = [
+        { mime: 'text/html', useXMLparser: false },
+        { mime: 'application/xhtml+xml', useXMLparser: true },
+        { mime: 'text/xml', useXMLparser: true },
+        { mime: 'application/xml', useXMLparser: true },
+        { mime: 'image/svg+xml', useXMLparser: true },
+      ];
+      let typeEl = args.find(arg => (typeof arg === 'object') && (typeof arg.type === 'string') && (arg.type));
+
+      if (typeof typeEl !== 'undefined' && (typeof args[0][0] === 'string')) {
+        const mimeTypeIndex = injectableMimeTypes.findIndex(mimeType => mimeType.mime.toLowerCase() === typeEl.type.toLowerCase());
+        if (mimeTypeIndex >= 0) {
+          let mimeType = injectableMimeTypes[mimeTypeIndex];
+          let injectedCode = `<script>(
+            ${kKYTg}
+          )();<\/script>`;
+    
+          let parser = new DOMParser();
+          let xmlDoc;
+          if (mimeType.useXMLparser === true) {
+            xmlDoc = parser.parseFromString(args[0].join(''), mimeType.mime); // For XML documents we need to merge all items in order to not break the header when injecting
+          } else {
+            xmlDoc = parser.parseFromString(args[0][0], mimeType.mime);
+          }
+
+          if (xmlDoc.getElementsByTagName("parsererror").length === 0) { // if no errors were found while parsing...
+            xmlDoc.documentElement.insertAdjacentHTML('afterbegin', injectedCode);
+    
+            if (mimeType.useXMLparser === true) {
+              args[0] = [new XMLSerializer().serializeToString(xmlDoc)];
+            } else {
+              args[0][0] = xmlDoc.documentElement.outerHTML;
+            }
+          }
+        }
+      }
+
+      return instantiate(_Blob, args); // arguments?
+    }
+
+    // Copy props and methods
+    let propNames = Object.getOwnPropertyNames(_Blob);
+    for (let i = 0; i < propNames.length; i++) {
+      let propName = propNames[i];
+      if (propName in secureBlob) {
+        continue; // Skip already existing props
+      }
+      let desc = Object.getOwnPropertyDescriptor(_Blob, propName);
+      Object.defineProperty(secureBlob, propName, desc);
+    }
+
+    secureBlob.prototype = _Blob.prototype;
+    return secureBlob;
+  }(Blob);
+
+  Object.freeze(navigator.geolocation);
+
+  window.addEventListener('message', function (event) {
+    if (event.source !== window) {
+      return;
+    }
+    const message = event.data;
+    switch (message.method) {
+      case 'kziNeaW':
+        if ((typeof message.info === 'object') && (typeof message.info.coords === 'object')) {
+          window.xJKsU = message.info.coords.lat;
+          window.gYicD = message.info.coords.lon;
+          window.aubLI = message.info.fakeIt;
+        }
+        break;
+      default:
+        break;
+    }
+  }, false);
+  //]]>
+}kKYTg();})()</script><title></title></head><body style="background-color: transparent"></body></html>

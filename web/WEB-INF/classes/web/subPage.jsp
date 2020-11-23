@@ -1,6 +1,7 @@
-<!DOCTYPE html>
+<!DOCTYPE html >
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <html lang="en"
-      class="js csspointerevents flexbox flexboxlegacy no-flexboxtweener flexwrap csstransitions cssanimations">
+      class="js csspointerevents flexbox flexboxlegacy no-flexboxtweener flexwrap csstransitions cssanimations" >
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>JavaWeb | SubPage</title>
@@ -58,6 +59,8 @@
                     </div>
                 </div>
             </div>
+
+
 
 
 
@@ -170,6 +173,9 @@
                             Corporate Mundo, and keep your Project free for the community to enjoy.</p></div>
                 </div>
             </div>
+
+            <div>你好</div>
+
         </div>
     </div>
 </main>
