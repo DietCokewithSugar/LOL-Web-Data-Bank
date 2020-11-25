@@ -12,13 +12,20 @@
 <head>
     <title>Title</title>
 </head>
+<style type="text/css">
+    *{
+        margin: 0px;
+        padding: 0px;
+        border: 0px;
+    }
+</style>
 <body id="bodyId" style="background-color: black">
 <%
     Dao dao=new Dao();
     String name=request.getParameter("name");
     Hero hero=dao.select(name);
 %>
-< img src="<%=hero.getPic()%>" style="height:100%; width: 100%; position:absolute">
+<img src="<%=hero.getPic()%>" style="height:100%; width: 100%; position:absolute">
 <div style="height: 600px;width: 800px;position: relative; left: 800px;top: 480px;">
     <audio autoplay="autoplay", loop="loop" controls="controls"
            style=" position: absolute ;width: 40px; height: 10px;
