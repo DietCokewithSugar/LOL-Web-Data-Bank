@@ -33,10 +33,16 @@
     </style>
 </head>
 <body >
-<img src="MainBackground.jpg" style="height:100%; width: 100%; position:absolute">
-<div style="background-color:black; width: 1650px;height: 80px;position: relative">
+<img src="pic/MainBackground.jpg" style="height:100%; width: 100%; position:absolute">
+<div style=" width: 100%;height: 80px;position:absolute">
+    <audio autoplay="autoplay", loop="loop" controls="controls"
+           style=" position: absolute ;width: 40px; height: 10px;
+                left: 550px;top:200px
+                ">
+        <source src="subpageMusic.mp3">
+    </audio>
     <ul>
-        <img src="logo.png" alt="" style="width: 80px; height: 80px; float: left;margin-left:0px;">
+        <img src="pic/logo1.png" alt="" style="width: 80px; height: 80px; float: left;margin-left:0px;">
         <li>
             <a href="search.jsp">
                 Find_The_Hero！
@@ -57,7 +63,11 @@
                 All_Heros
             </a>
         </li>
-
+        <li>
+            <a href="management.jsp">
+                Admin
+            </a>
+        </li>
     </ul>
 </div>
 </body>
